@@ -6,7 +6,7 @@ const Feature = ({ feature }) => {
     const { company_logo, job_title, company_name, remote_or_onsite, location, address, fulltime_or_parttime, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information } = feature
     return (
         <div>
-            <div className="card w-full h-96 bg-base-100 shadow-xl m-3">
+            <div className="card w-full h-96 bg-base-100 shadow-xl m-3 ">
                 <figure><img className='w-32' src={company_logo} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title mt-6 font-bold text-zinc-600 text-2xl">

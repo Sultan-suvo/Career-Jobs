@@ -6,9 +6,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import V from './Components/v/V';
 import Main from './Components/Layout/Main';
 import Home from './Components/Home/Home'
+import Blog from './Components/Blog/Blog';
 
 const router = createBrowserRouter([
   {
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
        
       },
       {
-        path:'s',
-        element:<V></V>
+        path:"blog",
+        element:<Blog></Blog>
       }
     ]
   },
