@@ -24,6 +24,7 @@ const CategoryLists = () => {
                     ></CategoryList>)
                 }
             </div>
+            
         </div>
     );
 };

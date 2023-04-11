@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import locationIcon from '../../assets/Icons/Frame-4.png'
 import salaryIcon from '../../assets/Icons/Frame.png'
 
 const Feature = ({ feature }) => {
+
     const { company_logo, job_title, company_name, remote_or_onsite, location, address, fulltime_or_parttime, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information } = feature
     return (
         <div>
