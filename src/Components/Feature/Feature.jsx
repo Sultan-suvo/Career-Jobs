@@ -7,10 +7,10 @@ const Feature = ({ feature, handleViewDetails }) => {
 
     const { company_logo, job_title, company_name, remote_or_onsite, location,id, address, fulltime_or_parttime, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information } = feature
     return (
-        <div>
+        <div className='relative'>
             <div className="card w-full h-96 bg-base-100 shadow-xl m-3 ">
                 <figure><img className='w-32' src={company_logo} alt="Shoes" /></figure>
-                <div className="card-body">
+                <div className="card-body ">
                     <h2 className="card-title mt-6 font-bold text-zinc-600 text-2xl">
                         {job_title}
                     </h2>
@@ -35,7 +35,7 @@ const Feature = ({ feature, handleViewDetails }) => {
                             onClick={() => {
                                 handleViewDetails(feature);
                             }}
-                            className="px-4 py-2.5 flex justify-center items-center font-bold text-base rounded-[4px] text-white bg-gradient-to-r from-blue-400 to-purple-600 bottom-0 mb-5"
+                            className="px-4 py-2.5 flex justify-center items-center font-bold text-base rounded-[4px] text-white bg-gradient-to-r from-blue-400 to-purple-600 absolute bottom-0 mb-5"
                         >
                             View Details
                         </button>
