@@ -9,6 +9,7 @@ import {
 import Main from './Components/Layout/Main';
 import Home from './Components/Home/Home'
 import Blog from './Components/Blog/Blog';
+import Statistics from './Components/Statistics/Statistics';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
        element:<Home></Home>,
        loader:()=> fetch('features.json')
        
+      },
+      {
+        path:"statistic",
+        element:<Statistics></Statistics>
       },
       {
         path:"blog",
