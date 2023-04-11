@@ -11,26 +11,32 @@ import Home from './Components/Home/Home'
 import Blog from './Components/Blog/Blog';
 import Statistics from './Components/Statistics/Statistics';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
+import JobDetails from './Components/JobDetails/JobDetails';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    errorElement:<ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
-       path:"/",
-       element:<Home></Home>,
-       loader:()=> fetch('features.json')
-       
+        path: "/",
+        element: <Home></Home>,
+        loader: () => fetch('features.json')
       },
       {
-        path:"statistic",
-        element:<Statistics></Statistics>
+        path: "/jobdetails/:id",
+        element: <JobDetails />,
+        loader: ({ params }) =>
+          fetch("/features.json").then((response) => response.json()),
       },
       {
-        path:"blog",
-        element:<Blog></Blog>
+        path: "statistic",
+        element: <Statistics></Statistics>
+      },
+      {
+        path: "blog",
+        element: <Blog></Blog>
       }
     ]
   },

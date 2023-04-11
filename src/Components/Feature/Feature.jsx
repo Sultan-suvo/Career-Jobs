@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import locationIcon from '../../assets/Icons/Frame-4.png'
 import salaryIcon from '../../assets/Icons/Frame.png'
+import { Link } from 'react-router-dom';
 
-const Feature = ({ feature }) => {
+const Feature = ({ feature, handleViewDetails }) => {
 
-    const { company_logo, job_title, company_name, remote_or_onsite, location, address, fulltime_or_parttime, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information } = feature
+    const { company_logo, job_title, company_name, remote_or_onsite, location,id, address, fulltime_or_parttime, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information } = feature
     return (
         <div>
             <div className="card w-full h-96 bg-base-100 shadow-xl m-3 ">
@@ -28,7 +29,20 @@ const Feature = ({ feature }) => {
                             <p className='text-slate-500'>Salary : {salary}</p>
                         </div>
                     </div>
-                    <button className='btn-all px-4 py-2 md:px-4 md:py-2 mt-3'>View Details</button>
+
+                    <Link to={`/jobdetails/${id}`}>
+                        <button
+                            onClick={() => {
+                                handleViewDetails(feature);
+                            }}
+                            className="px-4 py-2.5 flex justify-center items-center font-bold text-base rounded-[4px] text-white bg-gradient-to-r from-blue-400 to-purple-600 bottom-0 mb-5"
+                        >
+                            View Details
+                        </button>
+                    </Link>
+                    {/* <Link t0="/a"> 
+                   <button  className='btn-all px-4 py-2 md:px-4 md:py-2 mt-3'>View Details</button>
+                   </Link> */}
                 </div>
             </div>
         </div>

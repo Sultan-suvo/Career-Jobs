@@ -1,13 +1,27 @@
-import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 import Feature from '../Feature/Feature';
 
 const Features = () => {
-    const features = useLoaderData();
+    const features = useLoaderData()
+    // const [features, setFeatures] = useState([]);
+
+    // useEffect(() => {
+    //     fetch("features.json")
+    //         .then((res) => res.json())
+    //         .then((data) => setFeatures(data));
+    // }, []);
+
     const [showAll, setShowAll] = useState(false);
     const handleShowBtn = () => {
         setShowAll(true)
     }
+
+    const navigate = useNavigate();
+
+    const handleViewDetails = (id) => {
+        navigate(`/jobdetails/${id}`);
+    };
 
     console.log(features);
     return (
@@ -21,6 +35,7 @@ const Features = () => {
                     features.map(feature => <Feature
                         key={feature.id}
                         feature={feature}
+                        handleViewDetails={handleViewDetails}
                     ></Feature>)) :
                     (features.slice(0, 4).map(feature => <Feature
                         key={feature.id}
