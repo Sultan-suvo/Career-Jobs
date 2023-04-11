@@ -23,7 +23,7 @@ const Features = () => {
         navigate(`/jobdetails/${id}`);
     };
 
-    console.log(features);
+
     return (
         <div className='mt-24 px-12 md:px-40 '>
             <div className=' text-center'>

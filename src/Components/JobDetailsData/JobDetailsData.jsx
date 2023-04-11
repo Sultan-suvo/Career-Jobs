@@ -5,11 +5,18 @@ import titleIcon from '../../assets/Icons/Frame-1.png'
 import phoneIcon from '../../assets/Icons/Frame-2.png'
 import emailIcon from '../../assets/Icons/Frame-3.png'
 import locationIcon from '../../assets/Icons/Location Icon.png'
+import { Link } from 'react-router-dom';
 
 
 const JobDetailsData = ({ data }) => {
-    console.log(data);
     const { job_description, job_responsibility, educational_requirements, phone, experiences, salary, job_title, address, email } = data;
+
+
+
+    const handleApplybtn = (data) => {
+        console.log(data);
+    }
+
     return (
         <div className='md:flex  px-12 md:mx-40'>
             <div className='p-2 md:w-3/4'>
@@ -47,9 +54,9 @@ const JobDetailsData = ({ data }) => {
                         <p>Address : {address}</p>
                     </div>
                 </div>
-                <div>
-                    <button className='btn-all w-full px-4 py-2 md:px-4 md:py-2'>Apply Now</button>
-                </div>
+                <Link to="/appliedjobs">
+                    <button onClick={() => handleApplybtn(data)} className='btn-all w-full px-4 py-2 md:px-4 md:py-2'>Apply Now</button>
+                </Link>
             </div>
 
         </div>
