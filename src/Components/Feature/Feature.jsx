@@ -10,7 +10,7 @@ const Feature = ({ feature, handleViewDetails }) => {
     return (
         <div className='relative'>
             <div className="card w-full h-96 bg-base-100 shadow-xl m-3 ">
-                <figure><img className='w-32' src={company_logo} alt="Company_logo" /></figure>
+                <figure><img className='w-24' src={company_logo} alt="Company_logo" /></figure>
                 <div className="card-body ">
                     <h2 className="card-title mt-6 font-bold text-zinc-600 text-2xl">
                         {job_title}

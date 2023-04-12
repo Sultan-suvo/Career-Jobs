@@ -1,6 +1,7 @@
 import React from 'react';
 import './CategoryList.css'
 
+
 const CategoryList = ({ category }) => {
     const { logo, name, jobs } = category
     return (
