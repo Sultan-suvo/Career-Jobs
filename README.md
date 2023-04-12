@@ -10,7 +10,7 @@
   * 3. Tailwind css
   * 4. React
   * 5. vite
-
+  
  * Features
    * In this carre & jobs .you can find your jobs .its job related website . i uses react router dom for development.....if youn choosen any job you click view details .. and if anyone are interested job and you have to enough skilled and also have to education qualification you can apply now....if you want to show whice is applied ...you can clicked applied jobs button on navbar then you show    
 

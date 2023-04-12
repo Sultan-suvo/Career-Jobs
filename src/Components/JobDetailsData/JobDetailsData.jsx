@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 
 const JobDetailsData = ({ data }) => {
-    const { job_description, job_responsibility, educational_requirements, phone, experiences, salary, job_title, address, email } = data;
+    const { job_description, job_responsibility, educational_requirements, phone, experiences, salary, job_title, location, email } = data;
 
 
 
@@ -51,7 +51,7 @@ const JobDetailsData = ({ data }) => {
                     </div>
                     <div className='flex mb-3'>
                         <img className='me-2 text-slate-500  h-6' src={locationIcon} alt="" />
-                        <p>Address : {address}</p>
+                        <p>Address : {location}</p>
                     </div>
                 </div>
                 <Link to="/appliedjobs">

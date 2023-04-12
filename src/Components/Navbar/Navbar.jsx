@@ -14,7 +14,7 @@ const Navbar = () => {
                     <Link to="/blog">Blog</Link>
                 </li>
             </ul>
-            <button className='btn-all px-4 py-2 md:px-7 md:py-5 mt-3'>Star Applying</button>
+            <button className='btn-all px-4 py-2 md:px-7 md:py-5 mt-3'>Start Applying</button>
         </div>
     );
 };
