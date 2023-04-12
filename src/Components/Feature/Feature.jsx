@@ -40,9 +40,6 @@ const Feature = ({ feature, handleViewDetails }) => {
                             View Details
                         </button>
                     </Link>
-                    {/* <Link t0="/a"> 
-                   <button  className='btn-all px-4 py-2 md:px-4 md:py-2 mt-3'>View Details</button>
-                   </Link> */}
                 </div>
             </div>
         </div>

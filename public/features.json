@@ -13,10 +13,10 @@
         "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
         "educational_requirements": "Bachelor degree to complete any reputational university.",
         "experiences": "2-3 Years in this field.",
-        "contact_information": {
+        
             "phone": "01750-00 00 00",
             "email": "info@gmail.com"
-        }
+        
     },
     {
         "id": 1,
@@ -51,10 +51,10 @@
         "job_responsibility": "- Design, develop, and test software for our Autopilot system\n- Collaborate with cross-functional teams to ensure system integration and performance\n- Participate in code reviews and provide feedback to other developers\n- Contribute to the development of software tools and processes for the Autopilot team",
         "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field",
         "experiences": "Minimum of 3 years of experience in software development, preferably in the automotive or robotics industry",
-        "contact_information": {
+        
             "phone": "(555) 555-5555",
             "email": "jobs@tesla.com"
-        }
+        
     },
     {
         "id": 3,
@@ -69,10 +69,10 @@
         "job_responsibility": "- Design, develop, and deploy AI/ML models and algorithms that drive key product features and business outcomes\n- Collaborate with cross-functional teams to integrate AI/ML into product features\n- Conduct experiments to test the effectiveness of AI/ML models and algorithms\n- Contribute to the development of software tools and processes for the AI/ML team",
         "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field",
         "experiences": "Minimum of 3 years of experience in software development, with a focus on AI/ML",
-        "contact_information": {
+        
             "phone": "(555) 555-5555",
             "email": "jobs@facebook.com"
-        }
+        
     },
     {
         "id": 4,
@@ -87,10 +87,10 @@
         "job_responsibility": "- Design and deliver engaging and intuitive experiences for our users across our mobile and web platforms\n- Collaborate with cross-functional teams to understand user needs and business objectives\n- Develop and maintain design guidelines and best practices for the Instagram product\n- Conduct user research and testing to validate and iterate on design solutions",
         "educational_requirements": "Bachelor's or Master's degree in Design or related field",
         "experiences": "Minimum of 3 years of experience in product design, with a focus on mobile and web platforms",
-        "contact_information": {
+       
             "phone": "(555) 555-5555",
             "email": "jobs@instagram.com"
-        }
+        
     },
     {
         "id": 5,
@@ -105,9 +105,9 @@
         "job_responsibility": "- Design, develop, and maintain cloud-based services and applications that power the Microsoft Azure platform\n- Collaborate with cross-functional teams to build new features and improve existing ones\n- Contribute to the development of software tools and processes for the Azure team\n- Stay up-to-date with the latest technologies and trends in cloud computing",
         "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field",
         "experiences": "Minimum of 5 years of experience in software development, with a focus on cloud computing and distributed systems",
-        "contact_information": {
+       
             "phone": "(555) 555-5555",
             "email": "jobs@microsoft.com"
-        }
+        
     }
 ]

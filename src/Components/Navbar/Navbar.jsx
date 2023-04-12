@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <div className='md:flex justify-between items-center my-12 px-12 md:mx-40 text-center'> 
-            <h1 className='navbar-title text-center'>VISY<span className='text-orange-400'>MO</span></h1>
+            <h1 className='navbar-title text-center'>Career & <span className='text-orange-400'>Jobs</span></h1>
             <ul>
                 <li className='text-gray-500'>
                     <Link to="/">Home</Link>

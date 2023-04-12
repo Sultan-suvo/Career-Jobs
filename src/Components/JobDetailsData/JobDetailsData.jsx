@@ -14,8 +14,8 @@ const JobDetailsData = ({ data }) => {
 
 
     const handleApplybtn = (data) => {
-        console.log(data);
-    }
+        localStorage.setItem('jobApplication', JSON.stringify(data));
+      }
 
     return (
         <div className='md:flex  px-12 md:mx-40'>
