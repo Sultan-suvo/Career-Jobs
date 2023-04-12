@@ -39,7 +39,7 @@ const AppliedJobs = () => {
                     </div>
                 </div>
                <div>
-               <Link to={`/jobdetails`}>
+               <Link to="/">
                         <button
                             
                             className="px-4 py-2.5 flex justify-center items-center font-bold text-base rounded-[4px] text-white bg-gradient-to-r from-blue-400 to-purple-600 bottom-0 mb-5"
